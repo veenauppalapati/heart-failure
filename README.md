@@ -3,6 +3,31 @@ This is project 2 for Rutgers AI bootcamp
 Dr. House wants to know, can we predict heart disease with a model?
 ![image](https://github.com/user-attachments/assets/f63eff0e-f375-4dac-bc59-60a0b214b15b)
 
+## Project Summary
+The goal of this project is to identify the best-performing AI model that predicts  whether a patient has heart disease.
+
+## Data Preprocessing steps
+- One-Hot encoder to encode the categorical columns
+- StandardScaler to standardize the magnitude of  numerical columns
+
+## Logistic Regression Model
+- Creates a decision boundary line that separates two classes: “Heart Disease” and “No Heart Disease"
+- Applies sigmoid function to calculate the probability of having heart disease.  
+- Prediction: 
+  - If above 0.5 then “heart disease”, 
+  - if lower or equal to 0.5 then “no heart disease”
+
+## Support Vector Machine (SVM)
+- Creates a hyperplane or decision boundary that separates two classes: “Heart Disease” and “No Heart Disease.”
+- Uses kernel functions to transform data into a higher-dimensional space, making it easier to separate non-linear data.
+- Prediction:
+  - If a data point lies on one side of the hyperplane, it is classified as “Heart Disease.”
+  - If it lies on the other side, it is classified as “No Heart Disease.”
+
+## K-nearest neighbors (KNN)
+- For each test data point, the model identifies the closest data points in the training set and assigns it to the category that appears most frequently among them.
+
+![knn](image.png)
 
 ## Decision Trees and Decision Tree Ensembles 
 The second file "Failing_hearts.ipynb" performs the same preprocessing of the dataset in order to test the performance of decision tree and decision tree ensemble classifiers. 
