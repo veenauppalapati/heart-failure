@@ -8,7 +8,8 @@ The goal of this project is to identify the best-performing AI model that predic
 
 ## Data Preprocessing steps
 - One-Hot encoder to encode the categorical columns
-- StandardScaler to standardize the magnitude of  numerical columns
+- StandardScaler to standardize the magnitude of  numerical columns for Logistic Regression, Support Vector Machine and K-nearest neighbors
+- MinMaxScaler is used to standardize the numerical columns for the decision trees and the ensemble classifiers as these decision trees are more sensitive to the scale of the features and converging is faster with Min-Max Scaling. 
 
 ## Logistic Regression Model
 - Creates a decision boundary line that separates two classes: “Heart Disease” and “No Heart Disease"
